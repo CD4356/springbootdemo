@@ -1,0 +1,13 @@
+${AnsiColor.BRIGHT_RED}
+                .o8        .o     .oooo.     oooooooo     .ooo
+               "888      .d88   .dP""Y88b   dP"""""""   .88'
+ .ooooo.   .oooo888    .d'888         ]8P' d88888b.    d88'
+d88' `"Y8 d88' `888  .d'  888       <88b.      `Y88b  d888P"Ybo.
+888       888   888  88ooo888oo      `88b.       ]88  Y88[   ]88
+888   .o8 888   888       888   o.   .88P  o.   .88P  `Y88   88P
+`Y8bod8P' `Y8bod88P"     o888o  `8bd88P'   `8bd88P'    `88bod8'
+${AnsiColor.BRIGHT_GREEN}
+         spring-boot.version:  ${spring-boot.version}
+                             /\
+                             ||
+                    上面是修改后的banner标语

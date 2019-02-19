@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--Spring Boot依赖项使用<groupId>org.springframework.boot</groupId>-->
+    <!--Maven POM文件继承自spring-boot-starter-parent项目并声明对一个或多个“Starters”的依赖关系-->
+
+    <!-- <parent>这个标签是继承 Spring Boot 的父级依赖-->
+    <parent>
+        <!--  spring-boot-starter-parent 是一个特殊的 starter ，它用来提供相关的 Maven 默认依赖,
+              使用它之后，添加依赖时就可以省去 <version> 标签，它会自动帮你匹配相应的版本,
+              比如下面添加web依赖时就无需再使用<version>标签匹配版本号了 -->
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.2.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.cd4356</groupId>
+    <artifactId>springbootdemo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>springbootdemo</name>
+    <description>This is my first spring boot project</description>
+
+    <properties>
+        <!--jdk版本-->
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <!--添加Web应用程序的典型依赖项-->
+        <!-- spring-boot-starter-xxx ： 使用Spring Boot的场景启动器
+             spring-boot-starter-web ： 使用Spring Boot的web开发场景 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!--添加Spring Boot Maven插件(Spring Boot包含一个Maven插件，可以将项目打包为可执行jar)-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
