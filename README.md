@@ -1,5 +1,5 @@
-<table bgcolor=SeaGreen4>
-  <tr width="100%">
+<table>
+  <tr>
     <td>
       <font face="华文新魏">一. 创建项目</font>
     </td>
@@ -93,9 +93,13 @@
 `${AnsiColor.BRIGHT_RED}` 设置控制台中输出内容的颜色
 
 `${spring-boot.version}` Spring Boot的版本号
+
 ![](https://img-blog.csdnimg.cn/20190218004535264.png? "悬停显示")
 
 ###### 如果你要设置的banner标语很复杂，可使用[字符画生成工具](http://www.network-science.de/ascii/ "悬停显示")来生成想要的图标
 
 ##### 运行后打印结果如下：
 ![](https://img-blog.csdnimg.cn/20190218005500118.png? "悬停显示")
+
+
+    博客地址：https://blog.csdn.net/weixin_42950079/article/details/86678325
